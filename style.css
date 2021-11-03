@@ -1,0 +1,221 @@
+:root{
+    --font1 : 'Lato',sans-serif;
+    --font2 : 'Roboto Condensed', sans-serif;
+    --font3 : 'Roboto Mono', monospace;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font1);
+    margin: 0;
+}
+
+html{scroll-behavior: smooth;}
+
+
+
+.link{
+    text-decoration: none !important;
+    color: #f80000;
+}
+ 
+.nav-link{
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    color: black;
+    transition: color .4s;
+}
+
+.nav-link:hover{
+    color: #b5886a;
+}
+
+#divHero{
+    background-image: url('fondoE.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 35rem;
+}
+/*Sabor en cada sorbo*/
+#divHero h3{
+    position: relative;
+    left: 7rem;
+    top: 8rem;
+    /*Font*/
+    font-family: var(--font2);
+    font-size: 3rem;
+    color: #e90606;
+}
+
+#divHero p{
+    position: relative;
+    left: 1rem;
+    top: 9rem;
+    font-size: 1rem; 
+    color: #050100;
+}
+
+#botondivHero{
+    position: relative;
+    left: 10rem;
+    top: 12rem;
+    width: 30%;
+    padding: 1.5rem;
+}
+
+#botondivHero:hover{
+    background-color: #f12400;
+    border-color: #0e0600;
+    color: #f7b07e;
+}
+
+#botondivHero a{
+    transition: color .3s;
+}
+
+.boton{
+    /* border-radius: 13px; */
+    font-size: .9rem; 
+    color: #e65220;
+    text-align: center;
+    border: 3px solid #e65220;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color .3s, color .3s, border-color .3s;
+}
+
+.boton a{
+    text-decoration: none;
+    color: #e65220;
+}
+
+.boton a:hover{
+    text-decoration: none;
+    color: #e65220;
+}
+
+.boton:hover{
+    background-color: #BB8E73;
+}
+
+#divNosotros{
+    font-size: 1.5rem;
+    align-items: center;
+    font-family: var(--font3);
+    font-weight: bold;
+    background-color: #263458;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-align: center;
+}
+
+#productosTitulo h1{
+    align-items: center;
+    font-family: var(--font3);
+    font-weight: bold;
+    background-color: #69bff5d7;
+    padding: 2rem;
+    text-align: center;
+}
+
+#divProductos {
+    display: grid;    
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+.producto{
+    margin: 1rem;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.active{
+    color: #b5886a;
+}
+
+.producto p{
+    text-align: center;
+}
+
+.precio{
+    font-style: italic;
+    letter-spacing: .1rem;
+}
+
+
+#divContacto{
+    background-color: #2ba6f8;
+    color: white;
+    font-family: var(--font3);
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+}
+
+table{
+    padding: 2rem;
+    margin: auto;
+}
+
+td{
+    width: 10rem;
+    text-align: right;
+    padding: .4rem;
+}
+
+input[type="text"], textarea{
+    width: 20rem;
+    background-color: rgba(255, 255, 255, 0.267);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: .5rem;
+}
+
+
+@media screen and (min-width: 980px){
+    #divProductos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #divHero{
+        height: 40rem;
+    }
+
+    #divHero h3{
+        position: relative;
+        left: 15rem;
+        top: 10rem;
+        /*Font*/
+        font-family: var(--font2);
+        font-size: 5rem;
+        color: #fc3700;
+        width: 50%;
+    }
+
+    #divHero p{
+        position: relative;
+        left: 10rem;
+        top: 11rem;
+        font-size: 1.2rem; 
+        color: #ff3700;
+        width: 50%;
+    }
+
+    #botondivHero{
+        position: relative;
+        left: 20rem;
+        top: 13rem;
+        width: 13%;
+        padding: 1.5rem;
+    }
+}
